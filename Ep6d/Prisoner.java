@@ -74,7 +74,7 @@ public class Prisoner extends Thread {
 
     protected void roomAction() {
         // If I didn't switch the trigger on yet, then do it
-        if (this.count < 1 && !this.room.isTriggerSet())
+        if (this.count < 2 && !this.room.isTriggerSet())
         {
             System.out.println("Prisoner: " + this.id + " turns trigger on!");
             this.count++;

@@ -114,7 +114,7 @@ public class Prisoner extends Thread {
               while (this.state != Prisoner.IN_CELL){
                   this.NaCela.wait();
               }
-              
+
           } catch (InterruptedException e) {
               e.printStackTrace();
           }

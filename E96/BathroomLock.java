@@ -10,7 +10,7 @@ public class BathroomLock implements Bathroom {
     int qtdMale, qtdFemale;
 
     public BathroomLock() {
-        lock = new ReentrantLock();
+        lock = new ReentrantLock(true);
         condition = lock.newCondition();
         qtdMale = 0;
         qtdFemale = 0;
